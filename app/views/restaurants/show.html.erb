@@ -2,8 +2,8 @@
 <p>Address: <%=  @restaurant.address%></p>
 <p>Category: <%= @restaurant.category %></p>
 
-<%= link_to 'Reviews', restaurant_reviews_path(@restaurant) %>
-<%# <%= link_to 'Reviews', restaurant_reviews_path(@restaurant) %>
+<%= link_to 'view Reviews', restaurant_reviews_path(@restaurant) %>
+<%= link_to 'add Reviews', new_restaurant_review_path(@restaurant) %>
 
 <br>
 <br>
